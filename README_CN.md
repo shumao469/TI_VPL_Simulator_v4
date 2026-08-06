@@ -1,5 +1,11 @@
 # Xu lab · Mouse VPL TI Simulator v4
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app/)
+[![Streamlit App Status](https://img.shields.io/website?url=https%3A%2F%2Ftivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app%2F&up_message=online&down_message=offline&label=Streamlit%20app)](https://tivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app/)
+[![CI](https://github.com/shumao469/TI_VPL_Simulator_v4/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shumao469/TI_VPL_Simulator_v4/actions/workflows/ci.yml)
+
+**在线运行：** [Xu lab Mouse VPL TI Simulator v4](https://tivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app/)
+
 本包提供两个明确分开的计算层级：
 
 - **Allen CCF 解析预览**：真实 100 µm 脑掩膜与左侧 VPL 标签、17,999 面透明脑表面、清晰三正交切面、四电极和轨迹、随电流与位置实时重算的 mTI 电场。用于坐标/参数筛查。
@@ -55,6 +61,8 @@ bash run_web.sh
 
 ### Streamlit Community Cloud 部署
 
+已部署在线版本：**[打开 Xu lab Mouse VPL TI Simulator v4](https://tivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app/)**
+
 仓库根目录已经包含云端入口和最小依赖：
 
 ```text
@@ -66,7 +74,7 @@ requirements.txt
 在 [Streamlit Community Cloud](https://share.streamlit.io/) 中选择：
 
 ```text
-Repository:  您上传后的 GitHub 仓库
+Repository:  shumao469/TI_VPL_Simulator_v4
 Branch:      main
 Main file:   streamlit_app.py
 Python:      3.11（Advanced settings）
