@@ -1,0 +1,52 @@
+project:
+  name: xu_lab_ti_vpl_demo_fem_v4
+  mode: demo_template_fem
+
+coordinates:
+  frame: bregma_relative_mm
+  convention:
+    AP: anterior_positive
+    ML: right_positive
+    DV: dorsal_positive
+  target_vpl_mm:
+    AP: -1.94
+    ML: -1.75
+    DV: -3.10
+  target_radius_mm: 0.60
+
+mesh:
+  path: outputs/demo_mouse_head.msh
+  coordinate_unit: mm
+  element_size_mm: 0.35
+
+materials:
+  physical_tag_to_name:
+    1: scalp
+    2: skull
+    3: csf
+    4: brain
+  conductivity_S_per_m:
+    scalp: 0.465
+    skull: 0.010
+    csf: 1.654
+    brain: 0.275
+
+stimulation:
+  normalization_current_mA: 0.50
+  f1_Hz: 2000.0
+  f2_Hz: 2010.0
+  montage:
+    mode: crossed_target_centered
+    half_spacing_mm: 2.08
+    electrode_dv_mm: 0.50
+    rotation_deg: 0.0
+    patch_radius_mm: 0.75
+
+solver:
+  gauge_node: 0
+  direct_max_nodes: 300000
+  iterative_rtol: 1.0e-10
+  iterative_maxiter: 8000
+
+outputs:
+  directory: outputs

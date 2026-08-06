@@ -1,0 +1,6 @@
+# Minimal cloud-preview dependencies. The registered EFMouse solver uses
+# environment.yml / requirements-advanced.txt in a local Python 3.11 environment.
+streamlit>=1.60,<2
+numpy>=2.0,<3
+plotly>=6,<7
+PyYAML>=6,<7

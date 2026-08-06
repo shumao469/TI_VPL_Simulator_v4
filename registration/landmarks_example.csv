@@ -1,0 +1,6 @@
+bregma_AP,bregma_ML,bregma_DV,fem_x,fem_y,fem_z,label
+0.0,0.0,0.0,0.0,0.0,0.0,bregma
+-2.0,-3.0,-0.5,-2.0,-3.0,-0.5,left_posterior_skull
+-2.0,3.0,-0.5,-2.0,3.0,-0.5,right_posterior_skull
+2.0,0.0,-0.5,2.0,0.0,-0.5,anterior_midline
+0.0,0.0,-4.0,0.0,0.0,-4.0,ventral_midline

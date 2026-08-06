@@ -1,0 +1,90 @@
+project:
+  name: xu_lab_ti_vpl_simulator_v4
+  scientific_mode: registered_template
+
+coordinates:
+  input_frame: bregma_stereotaxic_mm
+  convention:
+    AP: anterior_positive
+    ML: right_positive
+    DV: dorsal_positive
+  requested_target_mm:
+    AP: -1.94
+    ML: -1.75
+    DV: -3.10
+  hemisphere: left
+  target_structure_acronym: VPL
+  # Generic Allen CCF origin is for QC only. Formal analysis must use a
+  # subject/template registration affine generated from landmarks or imaging.
+  generic_ccf_bregma_mm_AP_DV_ML: [5.40, 0.00, 5.70]
+  bregma_to_fem_affine_file: registration/bregma_to_fem_affine.txt
+  registration_qc_file: registration/registration_qc.json
+  maximum_registration_rms_mm: 0.20
+  maximum_allowed_target_to_vpl_mm: 0.30
+  allow_atlas_snap_for_visualization_only: true
+
+anatomy:
+  atlas_name: allen_mouse_25um
+  local_ccf_resolution_um: 100
+  efmouse_repository: https://github.com/klabhub/EFMouse.git
+  efmouse_mesh_mat: data/efmouse/Alekseichuk_mesh_clean.mat
+  converted_mesh_vtu: data/efmouse/Alekseichuk_mesh_clean.vtu
+  coordinate_unit: mm
+  tissues:
+    1: gray
+    2: csf
+    3: bone
+    4: skin
+    5: eye
+
+materials:
+  # EFMouse/ROAST baseline values at the conductive-model level, S/m.
+  conductivity_S_per_m:
+    gray: 0.275
+    csf: 1.654
+    bone: 0.010
+    skin: 0.465
+    eye: 0.500
+  sensitivity_multipliers:
+    gray: [0.8, 1.0, 1.2]
+    csf: [0.8, 1.0, 1.2]
+    bone: [0.5, 1.0, 2.0]
+    skin: [0.75, 1.0, 1.25]
+
+stimulation:
+  current_per_channel_mA: 0.50
+  channel_1_current_mA: 0.50
+  channel_2_current_mA: 0.50
+  f1_Hz: 2000.0
+  f2_Hz: 2010.0
+  skull_surface_dv_mm: 0.50
+  ideal_cross_half_spacing_mm: 2.08
+  nominal_vertical_drop_mm: 3.60
+  nominal_trajectory_length_mm: 4.16
+  nominal_trajectory_angle_deg: 60.0
+  electrode_patch_radius_mm: 0.75
+  maximum_surface_projection_mm: 2.0
+  target_sphere_radius_mm: 0.30
+  channel_1:
+    label: E1-E2
+    axis: AP
+    source_bregma_mm: [0.14, -1.75, 0.50]
+    return_bregma_mm: [-4.02, -1.75, 0.50]
+  channel_2:
+    label: E3-E4
+    axis: ML
+    source_bregma_mm: [-1.94, 0.33, 0.50]
+    return_bregma_mm: [-1.94, -3.83, 0.50]
+
+solver:
+  method: conjugate_gradient_amg
+  relative_tolerance: 1.0e-9
+  maximum_iterations: 10000
+  direct_maximum_nodes: 50000
+  gauge_node: 0
+  require_current_balance_relative: 1.0e-8
+
+outputs:
+  directory: outputs_advanced
+  save_uncapped_fields: true
+  visualization_percentile: 99.0

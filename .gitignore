@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.idea/
+.vscode/
+.DS_Store
+.streamlit/secrets.toml
+*.mat
+*.vtu
+outputs*/
+registration/bregma_to_fem_affine.txt
+registration/registration_qc.json
+registration/landmarks.csv

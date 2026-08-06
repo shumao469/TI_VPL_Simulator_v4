@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ti-vpl-mouse-fem-web"
+version = "4.0.0"
+description = "Xu Lab registered EFMouse FEM and Allen CCF mouse VPL temporal-interference simulator"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.11",
+  "meshio>=5.3",
+  "PyYAML>=6.0",
+  "h5py>=3.11",
+  "pynrrd>=1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,26 @@
+{
+  "source": "data/efmouse/Alekseichuk_mesh_clean.mat",
+  "output": "data/efmouse/Alekseichuk_mesh_clean.vtu",
+  "coordinate_unit": "mm (as distributed by EFMouse)",
+  "points": 1027341,
+  "tetrahedra": 5777527,
+  "bounds_mm": [
+    [
+      -17.250189,
+      -43.250576,
+      -9.550853
+    ],
+    [
+      15.550746,
+      45.532757,
+      10.155617
+    ]
+  ],
+  "tissue_counts": {
+    "1": 811011,
+    "2": 300694,
+    "3": 1417350,
+    "4": 3244406,
+    "5": 4066
+  }
+}
