@@ -1,0 +1,44 @@
+[
+  {
+    "file": "Figure_01_3D_TI_cutaways.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  },
+  {
+    "file": "Figure_02_target_and_VPL_sections.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  },
+  {
+    "file": "Figure_03_montage_and_channel_fields.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  },
+  {
+    "file": "Figure_04_current_redistribution.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  },
+  {
+    "file": "Figure_05_temporal_envelope.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  },
+  {
+    "file": "Figure_06_target_QC_and_distributions.pdf",
+    "pages": 1,
+    "width_mm": 182.88,
+    "embedded_raster_images": 0,
+    "svg_editable_text": true
+  }
+]

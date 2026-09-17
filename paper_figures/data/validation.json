@@ -1,0 +1,16 @@
+{
+  "numerical_tests_passed": 8,
+  "numerical_tests_failed": 0,
+  "tested_scope": [
+    "atlas coordinate roundtrip",
+    "current scaling",
+    "frequency invariance",
+    "zero modulation limits",
+    "independent direction search",
+    "exact vector limits",
+    "no target snapping",
+    "common reference normalization"
+  ],
+  "formal_fem_executed": false,
+  "real_animal_registration_validated": false
+}

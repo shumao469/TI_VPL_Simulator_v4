@@ -1,0 +1,68 @@
+{
+  "scientific_status": "ANALYTIC_PREVIEW_NOT_REGISTERED_FEM",
+  "anatomy": "Allen CCFv3 2017, 100 um; VPL id 718; left hemisphere",
+  "atlas_asset_sha256": "fe9f067643c001a5164c632b70c61f6530430c4b30dc1b3079e7fa9e86e71fa4",
+  "parameters": {
+    "target": {
+      "AP": -1.94,
+      "ML": -1.75,
+      "DV": -3.1
+    },
+    "channel_1_current_mA": 0.5,
+    "channel_2_current_mA": 0.5,
+    "f1_Hz": 2000.0,
+    "f2_Hz": 2010.0,
+    "roi_radius_mm": 0.6,
+    "half_spacing_mm": 2.08,
+    "electrode_dv_mm": 0.5,
+    "rotation_deg": 0.0,
+    "conductivity_S_per_m": 0.275,
+    "skull_transfer_factor": 0.028
+  },
+  "requested_target_mm": [
+    -1.94,
+    -1.75,
+    -3.1
+  ],
+  "vpl_centroid_mm": [
+    -1.4222222222222232,
+    -1.9739229024943303,
+    -4.264172335600907
+  ],
+  "nearest_vpl_voxel_center_mm": [
+    -1.4000000000000004,
+    -1.9,
+    -3.4000000000000004
+  ],
+  "target_to_nearest_vpl_voxel_center_mm": 0.6356886030125125,
+  "brain_voxel_count": 505359,
+  "vpl_voxel_count": 441,
+  "voxel_volume_mm3": 0.001,
+  "baseline_brain_max_preview_V_per_m": 3.0793786491321113,
+  "baseline_brain_peak_coordinate_mm": [
+    -2.9000000000000004,
+    -0.7999999999999998,
+    -0.2
+  ],
+  "baseline_target_preview_V_per_m": 0.3316171396768962,
+  "baseline_vpl_mean_preview_V_per_m": 0.17239928545744437,
+  "baseline_vpl_median_preview_V_per_m": 0.1659117736401126,
+  "baseline_brain_p95_preview_V_per_m": 0.6675142739886684,
+  "vpl_median_over_brain_p95": 0.2485516491635789,
+  "top_5_percent_field_weighted_centroid_mm": [
+    -2.0348054112202942,
+    -1.3539977049216472,
+    -1.048522429746509
+  ],
+  "normalization": "Every spatial map is divided by the same baseline whole-brain maximum; no per-panel normalization.",
+  "graphical_color_scale": "Logarithmic, 0.01-1 for mTI; channel comparison uses 0.01-3.",
+  "surface_rendering": "8 iterations of 0.15 Laplacian smoothing for display only; field and ROI arrays unchanged.",
+  "limitations": [
+    "Generic atlas mapping is not animal registration.",
+    "Point sources are at the ideal DV +0.50 mm plane, not a reconstructed skull surface.",
+    "The scalar factor 0.028 is inherited from v4 and is not a calibrated skull-transfer model.",
+    "Brain anatomy masks the output but does not constrain the PDE.",
+    "mTI is an orientation-maximized modulation depth, not activation probability.",
+    "0.1 mm atlas sampling is not an FEM mesh-convergence study."
+  ]
+}
