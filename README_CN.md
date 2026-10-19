@@ -1,3 +1,5 @@
+> 当前图谱版本、实际仿真方法、安装和操作入口请先看 [主页完整说明](README.md)。以下保留操作背景；原有机器路径仅为示例，请改为自己的仓库目录。高级 FEM 的通用图谱映射、半球筛选和等频处理限制见主页。
+
 # Xu lab · Mouse VPL TI Simulator v4
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tivplsimulatorv4-dp7r8p99mgktdkfyjkmhyf.streamlit.app/)
